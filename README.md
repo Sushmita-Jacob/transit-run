@@ -1,1 +1,2 @@
 # transit-run
+This project was made for Hack Club: The Game's TransitTime boost. It is based off of the popular web games Frogger and Crossy Road, but instead of the player controlling a frog/chicken, you get to play as a bus (the superior public transit option)! Try to avoid the disgusting dirty subway trains (real New Yorkers know).
