@@ -99,7 +99,7 @@ function handleObstacles(){
         }
         if (!safe){
             for (let i = 0; i < 30; i++){
-                ripplesArray.unshift(new particlesArray(frogger.x, frogger.y));
+                ripplesArray.unshift(new Particle(frogger.x, frogger.y));
             }
             resetGame();
         }
