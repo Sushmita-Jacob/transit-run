@@ -31,3 +31,30 @@ body {
     margin-top: 5px;
     text-align: center;
 }
+
+#easy {
+    border-radius: 10px;
+    background-color: green;
+}
+
+#medium {
+    border-radius: 10px;
+    background-color: orange;
+}
+
+#hard {
+    border-radius: 10px;
+    background-color: red;
+}
+
+#easy:hover {
+    background-color: darkgreen;
+}
+
+#medium:hover {
+    background-color: darkorange;
+}
+
+#hard:hover {
+    background-color: darkred;
+}
