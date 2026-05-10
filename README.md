@@ -9,6 +9,7 @@ Past the tutorial, the following was added:
 - Conditions to win or lose (instead of an infinite game)
 - A "You won!" and "You lost!" screen
 - Ability to replay if won
+- Background color and instructions to play the game
 
 Note for reviewer:
 I used OBS to screenrecord me creating the pixel art for the river because of errors with Lapse (approved by phthallo [here](https://hackclub.slack.com/archives/C0A9XULS1SL/p1777941863720429?thread_ts=1777941463.876369&cid=C0A9XULS1SL)).
