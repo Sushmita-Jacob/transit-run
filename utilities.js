@@ -35,16 +35,25 @@ animate();
 easy.addEventListener('click', function(){
     easybool = true;
     gameSpeed = 1.5;
+    easy.remove();
+    medium.remove();
+    hard.remove();
 })
 
 medium.addEventListener('click', function(){
     mediumbool = true;
     gameSpeed = 2
+    easy.remove();
+    medium.remove();
+    hard.remove();
 })
 
 hard.addEventListener('click', function(){
     hardbool = true;
     gameSpeed = 3
+    easy.remove();
+    medium.remove();
+    hard.remove();
 })
 
 //event listeners
@@ -63,7 +72,15 @@ window.addEventListener('keyup', function(e){
 });
 
 function scored(){
-    score++;
+    if (easybool == true) {
+        score++;
+    }
+    else if (mediumbool == true) {
+        score = score + 2;
+    }
+    else if (hardbool == true) {
+        score = score + 3;
+    }
     gameSpeed += 0.05;
     frogger.x = canvas.width/2 - frogger.width/2;
     frogger.y = canvas.height - frogger.height - 40;
