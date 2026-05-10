@@ -20,7 +20,8 @@ I used OBS to screenrecord me creating the pixel art for the river and cat becau
 The video is uploaded on Google Drive here (PixelRiver.mp4):
 https://drive.google.com/drive/folders/19AStwsOHGLQsX9DiH741He5CuD-0rBlN
 
-and YouTube here for the river (unlisted):
-https://youtu.be/IBLdLrnxSTI
+and YouTube here (unlisted):
+River: https://youtu.be/IBLdLrnxSTI
+Cat: https://youtu.be/ZFnHPLI16kc
 
-The video is 43 minutes long and I have 6 hours 34 minutes tracked on Hackatime for a total of 7 hours and 17 minutes on this project.
+The videos are 43 minutes long and 27 minutes long respectively, and I have 6 hours 34 minutes tracked on Hackatime for a total of 7 hours and 44 minutes on this project.
