@@ -13,8 +13,15 @@ function animate(){
     handleObstacles();
     handleScoreBoard();
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
-    frame++;
-    if (score == 5) {
+    if (score >= 5 & easybool == true) {
+    ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+    ctx4.fillStyle = 'green';
+    ctx4.strokeStyle = 'white';
+    ctx4.font = '60px Verdana';
+    ctx4.fillText('You won!', 160, 300);
+    ctx4.fillText('Press up to replay', 30, 380);
+    }
+    else if (score >= 15 & mediumbool == true) {
         ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'green';
         ctx4.strokeStyle = 'white';
@@ -22,7 +29,30 @@ function animate(){
         ctx4.fillText('You won!', 160, 300);
         ctx4.fillText('Press up to replay', 30, 380);
     }
-    if (collisionsCount >= 10) {
+    else if (score >= 30 & hardbool == true) {
+        ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+        ctx4.fillStyle = 'green';
+        ctx4.strokeStyle = 'white';
+        ctx4.font = '60px Verdana';
+        ctx4.fillText('You won!', 160, 300);
+        ctx4.fillText('Press up to replay', 30, 380);
+    }
+    frame++;
+    if (collisionsCount >= 10 & easybool == true) {
+        ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
+        ctx4.fillStyle = 'red';
+        ctx4.strokeStyle = 'white';
+        ctx4.font = '60px Verdana';
+        ctx4.fillText('You lost!', 160, 300);
+    }
+    else if (collisionsCount >= 5 & mediumbool == true) {
+        ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
+        ctx4.fillStyle = 'red';
+        ctx4.strokeStyle = 'white';
+        ctx4.font = '60px Verdana';
+        ctx4.fillText('You lost!', 160, 300);
+    }
+    else if (collisionsCount >= 1 & hardbool == true) {
         ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'red';
         ctx4.strokeStyle = 'white';
@@ -32,6 +62,8 @@ function animate(){
     requestAnimationFrame(animate);
 }
 easy.addEventListener('click', function(){
+    score = 0;
+    collisionsCount = 0;
     easybool = true;
     gameSpeed = 1.5;
     easy.remove();
@@ -40,6 +72,8 @@ easy.addEventListener('click', function(){
 })
 
 medium.addEventListener('click', function(){
+    score = 0;
+    collisionsCount = 0;
     mediumbool = true;
     gameSpeed = 2
     easy.remove();
@@ -48,6 +82,8 @@ medium.addEventListener('click', function(){
 })
 
 hard.addEventListener('click', function(){
+    score = 0;
+    collisionsCount = 0;
     hardbool = true;
     gameSpeed = 3
     easy.remove();
