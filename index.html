@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Transit Run</h1>
-    <div class="wrapper">
-        <canvas id="canvas1"></canvas>
-        <canvas id="canvas2"></canvas>
-        <canvas id="canvas3"></canvas>
-        <canvas id="canvas4"></canvas>
-        <canvas id="canvas5"></canvas>
+    <div class="game">
+        <div class="wrapper">
+            <canvas id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+            <canvas id="canvas3"></canvas>
+            <canvas id="canvas4"></canvas>
+            <canvas id="canvas5"></canvas>
+        </div>
+        <div class="buttons">
+            <button id="easy">Easy</button>
+            <button id="medium">Medium</button>
+            <button id="hard">Hard</button>
+        </div>
+        <h3>Play with the arrow keys. Don't collide more than 10 times.</h3>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h3>Press the arrow keys to move. Win by scoring 5 points. Don't collide more than 10 times.</h3>
-    <button id="easy">Easy</button>
-    <button id="medium">Medium</button>
-    <button id="hard">Hard</button>
     <script src="setup.js"></script>
     <script src="frogger.js"></script>
     <script src="particles.js"></script>

@@ -31,7 +31,6 @@ function animate(){
     }
     requestAnimationFrame(animate);
 }
-animate();
 easy.addEventListener('click', function(){
     easybool = true;
     gameSpeed = 1.5;
@@ -55,6 +54,9 @@ hard.addEventListener('click', function(){
     medium.remove();
     hard.remove();
 })
+
+animate();
+
 
 //event listeners
 window.addEventListener('keydown', function(e){
@@ -80,6 +82,8 @@ function scored(){
     }
     else if (hardbool == true) {
         score = score + 3;
+    } else {
+        score++;
     }
     gameSpeed += 0.05;
     frogger.x = canvas.width/2 - frogger.width/2;
