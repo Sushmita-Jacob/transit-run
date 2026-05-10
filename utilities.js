@@ -14,6 +14,21 @@ function animate(){
     handleScoreBoard();
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
     frame++;
+    if (score == 5) {
+        ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+        ctx4.fillStyle = 'green';
+        ctx4.strokeStyle = 'white';
+        ctx4.font = '60px Verdana';
+        ctx4.fillText('You won!', 160, 300);
+        ctx4.fillText('Press up to replay', 30, 380);
+    }
+    if (collisionsCount >= 10) {
+        ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
+        ctx4.fillStyle = 'red';
+        ctx4.strokeStyle = 'white';
+        ctx4.font = '60px Verdana';
+        ctx4.fillText('You lost!', 160, 300);
+    }
     requestAnimationFrame(animate);
 }
 
