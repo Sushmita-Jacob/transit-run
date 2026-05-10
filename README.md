@@ -11,3 +11,6 @@ Past the tutorial, the following was added:
 - Ability to replay if won
 
 Note for reviewer:
+I used OBS to screenrecord me creating the pixel art for the river because of errors with Lapse (approved by phthallo [here](https://hackclub.slack.com/archives/C0A9XULS1SL/p1777941863720429?thread_ts=1777941463.876369&cid=C0A9XULS1SL)). The video is uploaded on Google Drive here (PixelRiver.mp4):
+https://drive.google.com/drive/folders/19AStwsOHGLQsX9DiH741He5CuD-0rBlN
+The video is 43 minutes long and I have 6 hours 6 minutes tracked on Hackatime for a total of 6 hours and 49 minutes on this project.
