@@ -23,4 +23,4 @@ https://drive.google.com/drive/folders/19AStwsOHGLQsX9DiH741He5CuD-0rBlN
 and YouTube here for the river (unlisted):
 https://youtu.be/IBLdLrnxSTI
 
-The video is 43 minutes long and I have 6 hours 25 minutes tracked on Hackatime for a total of 7 hours and 8 minutes on this project.
+The video is 43 minutes long and I have 6 hours 34 minutes tracked on Hackatime for a total of 7 hours and 17 minutes on this project.
