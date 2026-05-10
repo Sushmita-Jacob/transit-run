@@ -19,4 +19,4 @@ https://drive.google.com/drive/folders/19AStwsOHGLQsX9DiH741He5CuD-0rBlN
 and YouTube here (unlisted):
 https://youtu.be/IBLdLrnxSTI
 
-The video is 43 minutes long and I have 6 hours 6 minutes tracked on Hackatime for a total of 6 hours and 49 minutes on this project.
+The video is 43 minutes long and I have 6 hours 15 minutes tracked on Hackatime for a total of 6 hours and 58 minutes on this project.
