@@ -31,8 +31,21 @@ function animate(){
     }
     requestAnimationFrame(animate);
 }
-
 animate();
+easy.addEventListener('click', function(){
+    easybool = true;
+    gameSpeed = 1.5;
+})
+
+medium.addEventListener('click', function(){
+    mediumbool = true;
+    gameSpeed = 2
+})
+
+hard.addEventListener('click', function(){
+    hardbool = true;
+    gameSpeed = 3
+})
 
 //event listeners
 window.addEventListener('keydown', function(e){
@@ -81,5 +94,15 @@ function resetGame(){
     frogger.y = canvas.height - frogger.height - 40;
     score = 0;
     collisionsCount++;
-    gameSpeed = 1;
+    if (easybool == true) {
+        gameSpeed = 1.5;
+    }
+    else if (mediumbool == true) {
+        gameSpeed = 2;
+    }
+    else if (hardbool == true) {
+        gameSpeed = 3;
+    } else {
+        gameSpeed = 1;
+    }
 }

@@ -31,6 +31,9 @@ let collisionsCount = 0;
 let frame = 0;
 let gameSpeed = 1;
 let safe = false;
+let easybool = false;
+let mediumbool = false;
+let hardbool = false;
 
 const particlesArray = [];
 const maxParticles = 300;
