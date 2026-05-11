@@ -1,3 +1,5 @@
+let startTime = 0;
+
 function animate(){
     ctx1.clearRect(0, 0, canvas.width, canvas.height);
     ctx2.clearRect(0, 0, canvas.width, canvas.height);
@@ -13,55 +15,75 @@ function animate(){
     handleObstacles();
     handleScoreBoard();
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
-    if (score >= 5 & easybool == true) {
-    ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
-    ctx4.fillStyle = 'green';
-    ctx4.strokeStyle = 'white';
-    ctx4.font = '60px Verdana';
-    ctx4.fillText('You won!', 160, 300);
-    ctx4.fillText('Press up to replay', 30, 380);
-    }
-    else if (score >= 15 & mediumbool == true) {
+
+    if (score >= 5 && easybool == true) {
+        const endTime = Date.now();
+        const time = (endTime - startTime)/1000;
         ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'green';
         ctx4.strokeStyle = 'white';
         ctx4.font = '60px Verdana';
-        ctx4.fillText('You won!', 160, 300);
-        ctx4.fillText('Press up to replay', 30, 380);
+        ctx4.fillText('You won!', 160, 200);
+        ctx4.fillText('Press up to replay', 30, 300)
+        ctx4.fillText(time, 180, 400);
     }
-    else if (score >= 30 & hardbool == true) {
+    else if (score >= 15 && mediumbool == true) {
+        const endTime = Date.now();
+        const time = (endTime - startTime)/1000;
         ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'green';
         ctx4.strokeStyle = 'white';
         ctx4.font = '60px Verdana';
-        ctx4.fillText('You won!', 160, 300);
-        ctx4.fillText('Press up to replay', 30, 380);
+        ctx4.fillText('You won!', 160, 200);
+        ctx4.fillText('Press up to replay', 30, 300)
+        ctx4.fillText(time, 180, 400);
+    }
+    else if (score >= 30 && hardbool == true) {
+        const endTime = Date.now();
+        const time = (endTime - startTime)/1000;
+        ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+        ctx4.fillStyle = 'green';
+        ctx4.strokeStyle = 'white';
+        ctx4.font = '60px Verdana';
+        ctx4.fillText('You won!', 160, 200);
+        ctx4.fillText('Press up to replay', 30, 300)
+        ctx4.fillText(time, 180, 400);
     }
     frame++;
-    if (collisionsCount >= 10 & easybool == true) {
+    if (collisionsCount >= 10 && easybool == true) {
+        const endTime = Date.now();
+        const time = (endTime - startTime)/1000;
         ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'red';
         ctx4.strokeStyle = 'white';
         ctx4.font = '60px Verdana';
-        ctx4.fillText('You lost!', 160, 300);
+        ctx4.fillText('You lost!', 160, 200);
+        ctx4.fillText(time, 180, 350);
     }
-    else if (collisionsCount >= 5 & mediumbool == true) {
+    else if (collisionsCount >= 5 && mediumbool == true) {
+        const endTime = Date.now();
+        const time = (endTime - startTime)/1000;
         ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'red';
         ctx4.strokeStyle = 'white';
         ctx4.font = '60px Verdana';
         ctx4.fillText('You lost!', 160, 300);
+        ctx4.fillText(time, 180, 350);
     }
-    else if (collisionsCount >= 1 & hardbool == true) {
+    else if (collisionsCount >= 1 && hardbool == true) {
+        const endTime = Date.now();
+        const time = (endTime - startTime)/1000;
         ctx4.drawImage(blackbackground, 0, 0, canvas.width, canvas.height);
         ctx4.fillStyle = 'red';
         ctx4.strokeStyle = 'white';
         ctx4.font = '60px Verdana';
         ctx4.fillText('You lost!', 160, 300);
+        ctx4.fillText(time, 180, 350);
     }
     requestAnimationFrame(animate);
 }
 easy.addEventListener('click', function(){
+    startTime = Date.now();
     score = 0;
     collisionsCount = 0;
     easybool = true;
@@ -72,6 +94,7 @@ easy.addEventListener('click', function(){
 })
 
 medium.addEventListener('click', function(){
+    startTime = Date.now();
     score = 0;
     collisionsCount = 0;
     mediumbool = true;
@@ -82,6 +105,7 @@ medium.addEventListener('click', function(){
 })
 
 hard.addEventListener('click', function(){
+    startTime = Date.now();
     score = 0;
     collisionsCount = 0;
     hardbool = true;

@@ -29,17 +29,17 @@ Past the tutorial, the following was added:
 - Buttons to choose difficulty or a sandbox mode
 - Different scoring and collision criteria based on difficulty
 - A "You won!" and "You lost!" screen
+- Timed playing sessions (shown on the win/lose screen)
 - Ability to replay if won
 - Background color and instructions to play the game
 
 Note for reviewer:
-I used OBS to screenrecord me creating the pixel art for the river and cat because of errors with Lapse (approved by phthallo [here](https://hackclub.slack.com/archives/C0A9XULS1SL/p1777941863720429?thread_ts=1777941463.876369&cid=C0A9XULS1SL)).
+I used OBS to screenrecord me creating the pixel art for the river because of errors with Lapse (approved by phthallo [here](https://hackclub.slack.com/archives/C0A9XULS1SL/p1777941863720429?thread_ts=1777941463.876369&cid=C0A9XULS1SL)).
 
 The video is uploaded on Google Drive here (PixelRiver.mp4):
 https://drive.google.com/drive/folders/19AStwsOHGLQsX9DiH741He5CuD-0rBlN
 
 and YouTube here (unlisted):
 River: https://youtu.be/IBLdLrnxSTI
-Cat: https://youtu.be/ZFnHPLI16kc
 
-The videos are 43 minutes long and 27 minutes long respectively, and I have 6 hours 34 minutes tracked on Hackatime for a total of 7 hours and 44 minutes on this project.
+The video is 43 minutes long, and I have 8 hours 38 minutes tracked on Hackatime for a total of 9 hours and 21 minutes on this project.
