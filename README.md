@@ -31,6 +31,7 @@ Past the tutorial, the following was added:
 - A "You won!" and "You lost!" screen easter egg (when the leaderboard is filled up)
 - Ability to replay if won (the tutorial didn't have replay options!)
 - Custom pixel art for water (the tutorial asset looked a little plain)
+- Fixed zooming error (the code from the tutorial caused certain parts to overlap when zooming out or zooming in)
 - Pixelated background for an old-school arcade feel
 - Background color and instructions to play the game
 
