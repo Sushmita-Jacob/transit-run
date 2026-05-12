@@ -25,34 +25,102 @@ function animate(){
             leaderboardCount++;
             if (leaderboardCount == 1) {
                 leaderboard1.textContent = `1) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 2) {
                 leaderboard2.textContent = `2) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 3) {
                 leaderboard3.textContent = `3) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 4) {
                 leaderboard4.textContent = `4) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 5) {
                 leaderboard5.textContent = `5) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 6) {
                 leaderboard6.textContent = `6) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 7) {
                 leaderboard7.textContent = `7) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 8) {
                 leaderboard8.textContent = `8) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 9) {
                 leaderboard9.textContent = `9) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 10) {
                 leaderboard10.textContent = `10) Easy | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
+                ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+                ctx4.fillStyle = 'green';
+                ctx4.strokeStyle = 'white';
+                ctx4.font = '60px Verdana';
+                ctx4.fillText('You won!', 160, 300);
+                return;
             }
-            score = 0;
-            collisionsCount = 0;
             ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
-            ctx4.fillStyle = 'green';
-            ctx4.strokeStyle = 'white';
-            ctx4.font = '60px Verdana';
-            ctx4.fillText('You won!', 160, 200);
-            ctx4.fillText('Press up to replay', 30, 300)
-            ctx4.fillText(time, 180, 400);
             if (keys[37] || keys[38] || keys[39] || keys[40]){
                 resetGame();
         }
@@ -64,32 +132,102 @@ function animate(){
             leaderboardCount++;
             if (leaderboardCount == 1) {
                 leaderboard1.textContent = `1) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false;
+                gameSpeed = 1;
             } else if (leaderboardCount == 2) {
                 leaderboard2.textContent = `2) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 3) {
                 leaderboard3.textContent = `3) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 4) {
                 leaderboard4.textContent = `4) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 5) {
                 leaderboard5.textContent = `5) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 6) {
                 leaderboard6.textContent = `6) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 7) {
                 leaderboard7.textContent = `7) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 8) {
                 leaderboard8.textContent = `8) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 9) {
                 leaderboard9.textContent = `9) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 10) {
                 leaderboard10.textContent = `10) Medium | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
+                ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+                ctx4.fillStyle = 'green';
+                ctx4.strokeStyle = 'white';
+                ctx4.font = '60px Verdana';
+                ctx4.fillText('You won!', 160, 300);
+                return;
             }
             ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
-            ctx4.fillStyle = 'green';
-            ctx4.strokeStyle = 'white';
-            ctx4.font = '60px Verdana';
-            ctx4.fillText('You won!', 160, 200);
-            ctx4.fillText('Press up to replay', 30, 300)
-            ctx4.fillText(time, 180, 400);
+            if (keys[37] || keys[38] || keys[39] || keys[40]){
+                resetGame();
+            }
         }
         else if (score >= 30 && hardbool == true) {
             const endTime = Date.now();
@@ -98,34 +236,103 @@ function animate(){
             leaderboardCount++;
             if (leaderboardCount == 1) {
                 leaderboard1.textContent = `1) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 2) {
                 leaderboard2.textContent = `2) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 3) {
                 leaderboard3.textContent = `3) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 4) {
                 leaderboard4.textContent = `4) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 5) {
                 leaderboard5.textContent = `5) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 6) {
                 leaderboard6.textContent = `6) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 7) {
                 leaderboard7.textContent = `7) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 8) {
                 leaderboard8.textContent = `8) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 9) {
                 leaderboard9.textContent = `9) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easy.style.display = "inline-block";
+                medium.style.display = "inline-block";
+                hard.style.display = "inline-block";
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
             } else if (leaderboardCount == 10) {
                 leaderboard10.textContent = `10) Hard | Score: ${score} | Time: ${time} | Collisions: ${collisionsCount}`;
+                easybool = false;
+                mediumbool = false;
+                hardbool = false
+                gameSpeed = 1;
+                ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
+                ctx4.fillStyle = 'green';
+                ctx4.strokeStyle = 'white';
+                ctx4.font = '60px Verdana';
+                ctx4.fillText('You won!', 160, 300);
+                return;
             }
             ctx4.drawImage(greenbackground, 0, 0, canvas.width, canvas.height);
-            ctx4.fillStyle = 'green';
-            ctx4.strokeStyle = 'white';
-            ctx4.font = '60px Verdana';
-            ctx4.fillText('You won!', 160, 200);
-            ctx4.fillText('Press up to replay', 30, 300)
-            ctx4.fillText(time, 180, 400);
+            if (keys[37] || keys[38] || keys[39] || keys[40]){
+                resetGame();
         }
-    }
+    } }
     if (collisionsCount >= 10 && easybool == true) {
         const endTime = Date.now();
         const time = (endTime - startTime)/1000;
@@ -165,9 +372,9 @@ easy.addEventListener('click', function(){
     collisionsCount = 0;
     easybool = true;
     gameSpeed = 1.5;
-    easy.remove();
-    medium.remove();
-    hard.remove();
+    easy.style.display = "none";
+    medium.style.display = "none";
+    hard.style.display = "none";
 })
 
 medium.addEventListener('click', function(){
@@ -176,9 +383,9 @@ medium.addEventListener('click', function(){
     collisionsCount = 0;
     mediumbool = true;
     gameSpeed = 2
-    easy.remove();
-    medium.remove();
-    hard.remove();
+    easy.style.display = "none";
+    medium.style.display = "none";
+    hard.style.display = "none";
 })
 
 hard.addEventListener('click', function(){
@@ -187,9 +394,9 @@ hard.addEventListener('click', function(){
     collisionsCount = 0;
     hardbool = true;
     gameSpeed = 3
-    easy.remove();
-    medium.remove();
-    hard.remove();
+    easy.style.display = "none";
+    medium.style.display = "none";
+    hard.style.display = "none";
 })
 
 animate();
