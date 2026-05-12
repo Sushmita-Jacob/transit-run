@@ -25,13 +25,13 @@ https://www.youtube.com/watch?v=GXvNEwu9cgM
 
 Past the tutorial, the following was added:
 - Buttons to choose difficulty (easy, medium, or hard) or an infinite sandbox mode
-- Different scoring and collision criteria to move on based on difficulty
+- The difficulty determines the scoring and collision criteria to move onto the next round (ex. in the tutorial, scoring always earned 1 point)
 - A table showing the history of previous game sessions (includes diffculty, score, time, and collisions)
 - Timed playing sessions (shown on the leaderboard and win/lose screen)
 - A "You won!" and "You lost!" screen easter egg (when the leaderboard is filled up)
-- Ability to replay if won (the tutorial didn't have replay options!)
-- Custom pixel art for water (the tutorial asset looked a little plain)
+- Ability to replay if won (the tutorial didn't have replay options)
 - Fixed zooming error (the code from the tutorial caused certain parts to overlap when zooming out or zooming in)
+- Custom pixel art for water (the tutorial asset looked a little plain)
 - Pixelated background for an old-school arcade feel
 - Background color and instructions to play the game
 
@@ -44,4 +44,4 @@ https://drive.google.com/drive/folders/19AStwsOHGLQsX9DiH741He5CuD-0rBlN
 and YouTube here (unlisted):
 River: https://youtu.be/IBLdLrnxSTI
 
-The video is 43 minutes long, and I have 10 hours 45 minutes tracked on Hackatime for a total of 11 hours and 28 minutes on this project.
+The video is 43 minutes long, and I have 10 hours 55 minutes tracked on Hackatime for a total of 11 hours and 38 minutes on this project.
